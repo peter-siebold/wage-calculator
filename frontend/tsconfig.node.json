@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "composite": true,
+      "isolatedModules": true,
+      "lib": ["ES2023"],
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "skipLibCheck": true,
+      "strict": true,
+      "target": "ES2022"
+  },
+  "include": ["./typings", "./*.ts", "./*.js"]
+}
