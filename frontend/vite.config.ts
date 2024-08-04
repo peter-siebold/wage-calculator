@@ -23,6 +23,7 @@ export default defineConfig(({ command }) => {
       noEmit({ match: (file) => file.endsWith(".svg") }),
       react(),
     ],
+    base: "/wage-calculator/",
     build: {
       outDir: resolve(__dirname, "build"),
     },
@@ -76,7 +77,7 @@ export default defineConfig(({ command }) => {
     return mergeConfig(
       baseConfig,
       {
-        base: "/",
+        // base: "/",
         build: {
           sourcemap: false,
         },

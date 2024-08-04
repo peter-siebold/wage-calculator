@@ -2,6 +2,7 @@
   "name": "calculator",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://github.com/peter-siebold/wage-calculator/",
   "type": "module",
   "engines": {
     "node": ">=20"
@@ -16,7 +17,8 @@
     "lint:ci": "eslint . --max-warnings 0 --format json --output-file sq-eslint-report.json",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "deploy": "vite build && gh-pages -d build"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
@@ -65,6 +67,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-regexp": "^2.5.0",
     "eslint-plugin-vitest": "^0.5.4",
+    "gh-pages": "^6.1.1",
     "globals": "^15.2.0",
     "jsdom": "^24.0.0",
     "prettier": "^3.2.5",
